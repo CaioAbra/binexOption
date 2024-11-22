@@ -1,0 +1,41 @@
+:root {
+    /* Cores Primárias */
+    --color-primary: #00C7BE;
+    /* Cor principal (verde água) */
+    --color-primary-hover: #008e92;
+    /* Cor principal para hover */
+
+    /* Cores Secundárias */
+    --color-secondary: #1A2238;
+    /* Fundo de botões secundários */
+    --color-secondary-hover: #151C2E;
+    /* Hover para botões secundários */
+
+    /* Cores de Fundo */
+    --color-background: #000d21;
+    /* Fundo geral */
+    --color-card-background: rgba(255, 255, 255, 0.1);
+    /* Fundo semitransparente dos cards */
+    --color-footer-background: #0A0D1A;
+    /* Fundo do rodapé */
+
+    /* Cores de Texto */
+    --color-text: #FFFFFF;
+    /* Texto branco */
+    --color-text-secondary: #C8C8C8;
+    /* Texto secundário */
+    --color-text-highlight: #00C7BE;
+    /* Texto destacado (verde água) */
+
+    /* Cores de Ícones */
+    --color-icon: #00C7BE;
+    /* Ícones padrão */
+    --color-icon-hover: #008e92;
+    /* Ícones no hover */
+
+    /* Cores Adicionais */
+    --color-border: rgba(255, 255, 255, 0.2);
+    /* Bordas semitransparentes */
+    --color-shadow: rgba(0, 0, 0, 0.2);
+    /* Sombras */
+}
