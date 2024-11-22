@@ -668,6 +668,11 @@ header .btn-login {
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 500px) {
+  .footer .social-icons .icon-list {
+    justify-content: center;
+  }
+}
 .footer .social-icons .icon-list .icon-item .icon-link {
   display: inline-flex;
   align-items: center;
@@ -696,6 +701,13 @@ header .btn-login {
   align-items: center;
   gap: 0px;
   margin-bottom: 0.5rem;
+  text-align: left;
+}
+@media screen and (max-width: 500px) {
+  .footer .list-empresa li a,
+  .footer .list-polici li a {
+    justify-content: center;
+  }
 }
 .footer .list-empresa li a svg,
 .footer .list-polici li a svg {
