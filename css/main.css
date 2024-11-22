@@ -88,7 +88,7 @@ header .btn-login {
   border-width: 1px 1px 1px 1px;
   border-color: #3D3D3D;
   border-radius: 10px 10px 10px 10px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7607843137);
 }
 
 .icon-list-container {
