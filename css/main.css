@@ -150,7 +150,7 @@ header .btn-login {
 .hero-section .description {
   font-size: 1rem;
   margin-top: 10px;
-  color: white;
+  color: #c8c8c8;
 }
 .hero-section .btn-cta {
   background: linear-gradient(90deg, #0AA2A6, #00c7be, #0AA2A6);
@@ -183,7 +183,7 @@ header .btn-login {
 .hero-section .clients {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 12px;
   margin-top: 15px;
 }
 .hero-section .clients img {
