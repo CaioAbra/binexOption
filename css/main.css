@@ -148,8 +148,20 @@ header .btn-login {
   fill: #000000;
   color: #000000;
   border-radius: 9px 9px 9px 9px;
-  padding: 25px 60px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
   transition: background 5s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .hero-section .btn-cta {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-section .btn-cta {
+    padding: 25px 60px;
+    font-size: 1rem;
+  }
 }
 .hero-section .btn-cta:hover {
   background: linear-gradient(180deg, #0AA2A6, #00c7be, #0AA2A6);
@@ -683,6 +695,7 @@ header .btn-login {
   display: flex;
   align-items: center;
   gap: 0px;
+  margin-bottom: 0.5rem;
 }
 .footer .list-empresa li a svg,
 .footer .list-polici li a svg {

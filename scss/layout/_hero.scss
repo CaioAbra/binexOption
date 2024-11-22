@@ -33,8 +33,18 @@
         fill: #000000;
         color: #000000;
         border-radius: 9px 9px 9px 9px;
-        padding: 25px 60px;
+        padding: 12px 24px;
+        font-size: 1.2rem;
         transition: background 5s ease-in-out;
+
+        @media screen and (min-width: 768px) {
+            font-size: .9rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding: 25px 60px;
+            font-size: 1rem;
+        }
 
         &:hover {
             // transform: scale(1.2);
