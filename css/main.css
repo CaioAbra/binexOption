@@ -615,4 +615,88 @@ header .btn-login {
   opacity: 0;
 }
 
+.footer {
+  background-color: transparent;
+  background-image: linear-gradient(360deg, rgba(10, 162, 166, 0.4196078431) 0%, #000D21 100%);
+  color: #fff;
+}
+.footer img {
+  max-width: 150px;
+}
+.footer p {
+  color: #c8c8c8;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.footer h5 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li a {
+  color: #c8c8c8;
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer ul li a:hover {
+  color: #0074cc;
+}
+.footer .social-icons {
+  text-align: center;
+}
+.footer .social-icons .icon-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .social-icons .icon-list .icon-item .icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.footer .social-icons .icon-list .icon-item .icon-link:hover {
+  transform: scale(1.1);
+}
+.footer .social-icons .icon-list .icon-item .icon-link svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-primary);
+  transition: fill 0.3s ease;
+}
+.footer .social-icons .icon-list .icon-item .icon-link svg:hover {
+  fill: var(--color-hover);
+}
+.footer .list-empresa li a,
+.footer .list-polici li a {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+.footer .list-empresa li a svg,
+.footer .list-polici li a svg {
+  fill: var(--color-primary);
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .footer img {
+    margin: 0 auto 20px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
