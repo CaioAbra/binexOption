@@ -41,6 +41,20 @@ body {
   font-family: "Open Sauce One", sans-serif;
 }
 
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.divider .divider-separator {
+  display: block;
+  width: 30%;
+  height: 2px;
+  background-color: var(--color-primary);
+  opacity: 0.6;
+}
+
 header {
   background-color: #000d21;
   background-image: linear-gradient(180deg, rgba(10, 162, 166, 0.5019607843) 0%, #000D21 100%);

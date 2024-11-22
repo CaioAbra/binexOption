@@ -2,3 +2,18 @@ body {
     background: var(--color-background);
     font-family: 'Open Sauce One', sans-serif;
 }
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+
+    .divider-separator {
+        display: block;
+        width: 30%;
+        height: 2px;
+        background-color: var(--color-primary);; // Defina uma variável para a cor da linha
+        opacity: 0.6; // Ajusta a transparência
+    }
+}
