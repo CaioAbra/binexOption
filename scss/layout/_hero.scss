@@ -13,7 +13,7 @@
         font-weight: bold;
 
         .highlight {
-            color: #00a8e8;
+            color: #00C7BE;
         }
     }
 
@@ -23,15 +23,22 @@
         color: lighten(#ffffff, 20%);
     }
 
-    .btn-primary {
-        background-color: #00a8e8;
-        border-color: #00a8e8;
-        font-size: 1.1rem;
-        padding: 10px 20px;
-        border-radius: 5px;
+    .btn-cta {
+        background: linear-gradient(90deg, #0AA2A6, #00c7be, #0AA2A6);
+        background-size: 200%;
+        font-family: "Open Sauce", Sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.3em;
+        fill: #000000;
+        color: #000000;
+        border-radius: 9px 9px 9px 9px;
+        padding: 25px 60px;
+        transition: background 5s ease-in-out ;
 
         &:hover {
-            background-color: darken(#00a8e8, 10%);
+            // transform: scale(1.2);
+            background: linear-gradient(180deg, #0AA2A6, #00c7be, #0AA2A6);
         }
     }
 

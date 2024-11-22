@@ -1,0 +1,45 @@
+.icon-list-container {
+    .icon-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .icon-list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px 10px 10px 10px;
+            background-color: #2D2D2D6B;
+            border-radius: 10px 10px 10px 10px;
+            align-content: center;
+            justify-content: space-evenly;
+
+            .icon {
+                margin-right: 10px;
+                
+
+                .icon-svg {
+                    width: 24px;
+                    height: 24px;
+                    fill: #00C7BE;
+                    transition: fill 0.3s;
+                }
+            }
+
+            .text {
+                font-size: 1rem;
+                color: #00C7BE;
+            }
+
+            &:hover {
+                .icon-svg {
+                    fill: #00a8e8; // Cor de destaque no hover
+                }
+
+                .text {
+                    color: #00a8e8; // Cor de destaque no texto no hover
+                }
+            }
+        }
+    }
+}

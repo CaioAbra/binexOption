@@ -1,0 +1,126 @@
+.laptop-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; // Tamanho máximo do contêiner
+    margin: 0 auto;
+
+    .laptop {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 2; // O laptop está na frente de todos os elementos
+    }
+
+    .coin {
+        position: absolute;
+        width: 50px;
+        transition: transform 0.3s ease;
+
+        // Moedas na frente do laptop
+        &.tesla {
+            top: -10px;
+            left: 10%;
+            z-index: 3;
+        }
+
+        &.bitcoin {
+            top: -15px;
+            right: 10%;
+            z-index: 3;
+        }
+
+        // Moedas atrás do laptop
+        &.amazon {
+            top: 40%;
+            left: 5%;
+            z-index: 1; // Atrás do laptop
+        }
+
+        &.mcdonalds {
+            bottom: 0;
+            left: 15%;
+            z-index: 1; // Atrás do laptop
+        }
+
+        // Moedas em camadas intermediárias
+        &.ethereum {
+            top: 40%;
+            right: 5%;
+            z-index: 2;
+        }
+
+        &.litecoin {
+            bottom: 0;
+            right: 15%;
+            z-index: 2;
+        }
+
+        &:hover {
+            transform: scale(1.2); // Aumenta no hover
+        }
+    }
+
+    // Responsividade
+    @media (max-width: 768px) {
+        // Tablets e dispositivos médios
+        max-width: 90%;
+
+        .coin {
+            width: 40px;
+
+            &.tesla {
+                top: -8px;
+                left: 5%;
+            }
+
+            &.amazon {
+                top: 35%;
+                left: 2%;
+            }
+
+            &.mcdonalds {
+                bottom: -5px;
+                left: 10%;
+            }
+
+            &.bitcoin {
+                top: -10px;
+                right: 5%;
+            }
+
+            &.ethereum {
+                top: 35%;
+                right: 2%;
+            }
+
+            &.litecoin {
+                bottom: -5px;
+                right: 10%;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        // Smartphones e telas pequenas
+        max-width: 100%;
+
+        .coin {
+            width: 30px;
+
+            &.tesla,
+            &.bitcoin {
+                top: -5px;
+            }
+
+            &.amazon,
+            &.ethereum {
+                top: 30%;
+            }
+
+            &.mcdonalds,
+            &.litecoin {
+                bottom: -10px;
+            }
+        }
+    }
+}

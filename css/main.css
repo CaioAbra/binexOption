@@ -34,6 +34,41 @@ header .btn-login {
   color: #fff;
 }
 
+.icon-list-container .icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.icon-list-container .icon-list .icon-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(45, 45, 45, 0.4196078431);
+  border-radius: 10px 10px 10px 10px;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.icon-list-container .icon-list .icon-list-item .icon {
+  margin-right: 10px;
+}
+.icon-list-container .icon-list .icon-list-item .icon .icon-svg {
+  width: 24px;
+  height: 24px;
+  fill: #00C7BE;
+  transition: fill 0.3s;
+}
+.icon-list-container .icon-list .icon-list-item .text {
+  font-size: 1rem;
+  color: #00C7BE;
+}
+.icon-list-container .icon-list .icon-list-item:hover .icon-svg {
+  fill: #00a8e8;
+}
+.icon-list-container .icon-list .icon-list-item:hover .text {
+  color: #00a8e8;
+}
+
 .hero-section {
   padding: 60px 0;
   background-color: #000d21;
@@ -48,22 +83,28 @@ header .btn-login {
   font-weight: bold;
 }
 .hero-section h1 .highlight {
-  color: #00a8e8;
+  color: #00C7BE;
 }
 .hero-section .description {
   font-size: 1rem;
   margin-top: 10px;
   color: white;
 }
-.hero-section .btn-primary {
-  background-color: #00a8e8;
-  border-color: #00a8e8;
-  font-size: 1.1rem;
-  padding: 10px 20px;
-  border-radius: 5px;
+.hero-section .btn-cta {
+  background: linear-gradient(90deg, #0AA2A6, #00c7be, #0AA2A6);
+  background-size: 200%;
+  font-family: "Open Sauce", Sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  fill: #000000;
+  color: #000000;
+  border-radius: 9px 9px 9px 9px;
+  padding: 25px 60px;
+  transition: background 5s ease-in-out;
 }
-.hero-section .btn-primary:hover {
-  background-color: #0083b5;
+.hero-section .btn-cta:hover {
+  background: linear-gradient(180deg, #0AA2A6, #00c7be, #0AA2A6);
 }
 .hero-section .clients {
   display: flex;
@@ -93,6 +134,105 @@ header .btn-login {
   .hero-section .btn-primary {
     font-size: 1rem;
     padding: 8px 16px;
+  }
+}
+.laptop-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.laptop-container .laptop {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.laptop-container .coin {
+  position: absolute;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+.laptop-container .coin.tesla {
+  top: -10px;
+  left: 10%;
+  z-index: 3;
+}
+.laptop-container .coin.bitcoin {
+  top: -15px;
+  right: 10%;
+  z-index: 3;
+}
+.laptop-container .coin.amazon {
+  top: 40%;
+  left: 5%;
+  z-index: 1;
+}
+.laptop-container .coin.mcdonalds {
+  bottom: 0;
+  left: 15%;
+  z-index: 1;
+}
+.laptop-container .coin.ethereum {
+  top: 40%;
+  right: 5%;
+  z-index: 2;
+}
+.laptop-container .coin.litecoin {
+  bottom: 0;
+  right: 15%;
+  z-index: 2;
+}
+.laptop-container .coin:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .laptop-container {
+    max-width: 90%;
+  }
+  .laptop-container .coin {
+    width: 40px;
+  }
+  .laptop-container .coin.tesla {
+    top: -8px;
+    left: 5%;
+  }
+  .laptop-container .coin.amazon {
+    top: 35%;
+    left: 2%;
+  }
+  .laptop-container .coin.mcdonalds {
+    bottom: -5px;
+    left: 10%;
+  }
+  .laptop-container .coin.bitcoin {
+    top: -10px;
+    right: 5%;
+  }
+  .laptop-container .coin.ethereum {
+    top: 35%;
+    right: 2%;
+  }
+  .laptop-container .coin.litecoin {
+    bottom: -5px;
+    right: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .laptop-container {
+    max-width: 100%;
+  }
+  .laptop-container .coin {
+    width: 30px;
+  }
+  .laptop-container .coin.tesla, .laptop-container .coin.bitcoin {
+    top: -5px;
+  }
+  .laptop-container .coin.amazon, .laptop-container .coin.ethereum {
+    top: 30%;
+  }
+  .laptop-container .coin.mcdonalds, .laptop-container .coin.litecoin {
+    bottom: -10px;
   }
 }
 
