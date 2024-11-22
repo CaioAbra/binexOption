@@ -18,7 +18,7 @@
   --color-footer-background: #0A0D1A;
   /* Fundo do rodapé */
   /* Cores de Texto */
-  --color-text: #FFFFFF;
+  --color-text: #FFFFFFC2;
   /* Texto branco */
   --color-text-secondary: #C8C8C8;
   /* Texto secundário */
@@ -294,6 +294,7 @@ header .btn-login {
   margin-top: 1rem;
 }
 .advantages-section .advantage-card {
+  border: 1px solid #3D3D3D;
   background-color: var(--color-card-background);
   border-radius: 10px;
   padding: 20px;
@@ -327,6 +328,7 @@ header .btn-login {
   background-color: transparent;
   box-shadow: none;
   justify-content: center;
+  border: none;
 }
 .advantages-section .phone-image img {
   width: 100%;
@@ -391,6 +393,92 @@ header .btn-login {
   background: #003841;
   /* Cor mais escura no hover */
   color: #fff;
+}
+
+.how-to-operate .section-title {
+  font-size: 2rem;
+  color: var(--color-text);
+}
+.how-to-operate .section-title .highlight {
+  color: var(--color-primary);
+}
+.how-to-operate .section-subtitle {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: normal;
+  color: var(--color-text-secondary);
+  margin-top: 1rem;
+}
+.how-to-operate .how-to-card {
+  border: 1px solid #3D3D3D;
+  background-color: var(--color-card-background);
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--color-text);
+  box-shadow: 0 4px 8px var(--color-shadow);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.how-to-operate .how-to-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px var(--color-shadow-hover);
+}
+.how-to-operate .how-to-card .icon-wrapper {
+  background-color: var(--color-icon-background);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.how-to-operate .how-to-card .icon-wrapper svg {
+  fill: var(--color-icon);
+  width: 2rem;
+  height: 2rem;
+}
+.how-to-operate .how-to-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: var(--color-text);
+}
+.how-to-operate .how-to-card .card-text {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+.how-to-operate .row {
+  justify-content: center;
+  align-items: center;
+}
+.how-to-operate .row .col-md-4 {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .how-to-operate .row .col-md-4 {
+    margin-bottom: 0;
+  }
+}
+.how-to-operate .card-body {
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .how-to-operate .how-to-card {
+    padding: 15px;
+  }
+  .how-to-operate .how-to-card .icon-wrapper {
+    padding: 10px;
+  }
+  .how-to-operate .how-to-card .icon-wrapper svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .how-to-operate .how-to-card .card-title {
+    font-size: 1rem;
+  }
+  .how-to-operate .how-to-card .card-text {
+    font-size: 0.75rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

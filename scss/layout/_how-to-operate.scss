@@ -1,0 +1,102 @@
+.how-to-operate {
+    .section-title {
+        font-size: 2rem;
+        color: var(--color-text);
+
+        .highlight {
+            color: var(--color-primary);
+        }
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: normal;
+        color: var(--color-text-secondary);
+        margin-top: 1rem;
+    }
+
+    .how-to-card {
+        border: 1px solid #3D3D3D;
+        background-color: var(--color-card-background);
+        border-radius: 10px;
+        padding: 20px;
+        color: var(--color-text);
+        box-shadow: 0 4px 8px var(--color-shadow);
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--color-shadow-hover);
+        }
+
+        .icon-wrapper {
+            background-color: var(--color-icon-background);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            svg {
+                fill: var(--color-icon);
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+            color: var(--color-text);
+        }
+
+        .card-text {
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+            line-height: 1.5;
+        }
+    }
+
+    .row {
+        justify-content: center;
+        align-items: center;
+
+        .col-md-4 {
+            margin-bottom: 1.5rem;
+
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    @media (max-width: 768px) {
+        .how-to-card {
+            padding: 15px;
+
+            .icon-wrapper {
+                padding: 10px;
+
+                svg {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+
+            .card-title {
+                font-size: 1rem;
+            }
+
+            .card-text {
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
