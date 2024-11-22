@@ -1,0 +1,99 @@
+header {
+  background-color: #000d21;
+  background-image: linear-gradient(180deg, rgba(10, 162, 166, 0.5019607843) 0%, #000D21 100%);
+  min-height: 141PX;
+  align-content: center;
+  margin: auto;
+}
+header .navbar-brand {
+  width: 300px;
+  height: 50px;
+}
+@media screen and (max-width: 425px) {
+  header .navbar-brand {
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+header .btn-outline-primary {
+  fill: #000000;
+  color: #000000;
+  background-color: #00C7BE;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #3D3D3D;
+  border-radius: 10px 10px 10px 10px;
+}
+header .btn-login {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #3D3D3D;
+  border-radius: 10px 10px 10px 10px;
+  color: #fff;
+}
+
+.hero-section {
+  padding: 60px 0;
+  background-color: #000d21;
+  color: #ffffff;
+}
+.hero-section .tagline {
+  font-size: 1.2rem;
+  color: #4fceff;
+}
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.hero-section h1 .highlight {
+  color: #00a8e8;
+}
+.hero-section .description {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: white;
+}
+.hero-section .btn-primary {
+  background-color: #00a8e8;
+  border-color: #00a8e8;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.hero-section .btn-primary:hover {
+  background-color: #0083b5;
+}
+.hero-section .clients {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+.hero-section .clients img {
+  width: 50px;
+  height: auto;
+}
+.hero-section .laptop-img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 20px;
+  }
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section .description {
+    font-size: 0.9rem;
+  }
+  .hero-section .btn-primary {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
